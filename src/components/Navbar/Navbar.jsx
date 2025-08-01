@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Download } from 'lucide-react';
+import Logo from './logo.png'; // Adjust the path to your logo image
 
 function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -29,7 +30,7 @@ function Navbar() {
                        <a href="/" className="flex items-center pl-20">
   {/* Logo image */}
   <img
-    src="src/components/Navbar/logo.png"     // Put your logo image path here
+    src={Logo}     // Put your logo image path here
     alt="GorkhaRide Logo"
     className=" rounded-lg mr-3 object-cover"
   />
