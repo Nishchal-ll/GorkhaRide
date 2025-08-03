@@ -1,4 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
+import Parcel from '../../assets/parcel.png'
+import Food from '../../assets/food.png'
+import Ride from '../../assets/ride.png'
 
 const YouTubeVideoSection = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -35,7 +38,7 @@ const YouTubeVideoSection = () => {
       type: "Tutorial",
       category: "Video Guide",
       videoUrl: "https://www.youtube.com/@gorkharide",
-      thumbnail: "src/components/YoutubeVideo/ride.png"
+      thumbnail: Ride
     },
     {
       icon: "fas fa-utensils",
@@ -45,7 +48,7 @@ const YouTubeVideoSection = () => {
       type: "Tutorial",
       category: "Video Guide",
       videoUrl: "https://www.youtube.com/@gorkharide",
-      thumbnail: "src/components/YoutubeVideo/food.png"
+      thumbnail: Food
     },
     {
       icon: "fas fa-box",
@@ -55,7 +58,7 @@ const YouTubeVideoSection = () => {
       type: "Tutorial",
       category: "Video Guide",
       videoUrl: "https://www.youtube.com/@gorkharide",
-      thumbnail: "src/components/YoutubeVideo/parcel.png"
+      thumbnail: Parcel
     }
   ]
 
@@ -68,7 +71,7 @@ const YouTubeVideoSection = () => {
       type: "Partner Guide",
       category: "Video Guide",
       videoUrl: "https://www.youtube.com/@gorkharide",
-      thumbnail: "src/components/YoutubeVideo/parcel.png"
+      thumbnail: Food
     },
     {
       icon: "fas fa-car",
@@ -78,7 +81,7 @@ const YouTubeVideoSection = () => {
       type: "Partner Guide",
       category: "Video Guide",
       videoUrl: "https://www.youtube.com/@gorkharide",
-      thumbnail: "src/components/YoutubeVideo/parcel.png"
+      thumbnail: Food
     },
     {
       icon: "fas fa-tools",
@@ -88,7 +91,7 @@ const YouTubeVideoSection = () => {
       type: "Partner Guide",
       category: "Video Guide",
       videoUrl: "https://www.youtube.com/@gorkharide",
-      thumbnail: "src/components/YoutubeVideo/parcel.png"
+      thumbnail: Food
     }
   ]
 
@@ -101,7 +104,7 @@ const YouTubeVideoSection = () => {
       className={`bg-white rounded-xl p-4 shadow-sm hover:shadow-xl transition-all duration-500 border border-green-100/50 hover:border-green-300/70 cursor-pointer transform ${
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
       } hover:-translate-y-3 hover:scale-105 group`}
-      style={{ transitionDelay: `${400 + index * 100}ms` }}
+      style={{ transitionDelay: `${40 + index * 10}ms` }}
       onMouseEnter={() => setHoveredVideo(`${isPartner ? 'partner' : 'booking'}-${index}`)}
       onMouseLeave={() => setHoveredVideo(null)}
       onClick={() => handleVideoClick(video.videoUrl)}

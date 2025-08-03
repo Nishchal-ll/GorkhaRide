@@ -1,4 +1,5 @@
 import React from 'react'
+import Log from '../../assets/log.png'; // Adjust the path to your logo image
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
             <div class="grid grid-cols-1 md:grid-cols-4 gap-16">
                 <div>
                     <div class="flex items-center mb-4">
-    <img src="src/components/Footer/log.png" alt="Gorkha Ride Logo" class="h-10 w-196 mr-2 rounded-lg object-cover" />
+    <img src={Log} alt="Gorkha Ride Logo" class="h-10 w-196 mr-2 rounded-lg object-cover" />
 </div>
                     <p class="text-gray-400 mb-4">All-in-One Super App in Nepal. Your trusted partner for transportation, shopping, and services.</p>
                     <div class="flex space-x-4">

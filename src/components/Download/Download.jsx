@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
+import QR from '../../assets/qr.png'
+
 
 const Download = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -196,7 +198,7 @@ const Download = () => {
                 <div className="w-32 h-32 bg-gray-100 border-2 border-dashed border-gray-300 rounded flex items-center justify-center overflow-hidden">
                   {/* QR Code Image Upload Field */}
                   <img 
-                    src="src/components/Download/qr.png" 
+                    src={QR}
                     alt="QR Code to download Gorkha Ride app" 
                     className="w-full h-full object-contain"
                     onError={(e) => {
